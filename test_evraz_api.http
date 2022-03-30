@@ -1,0 +1,54 @@
+GET http://localhost:1234/api/user_resource/user_info?user_id=2
+Accept: application/json
+
+###
+
+POST http://localhost:1234/api/user_resource/replace_user
+Accept: application/json
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "changed name",
+  "age": 100
+}
+
+###
+
+POST http://localhost:1234/api/user_resource/change_user
+Accept: application/json
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "updated name"
+}
+
+###
+
+POST http://localhost:1234/api/user_resource/delete_user
+Accept: application/json
+Content-Type: application/json
+
+{
+  "user_id": 2
+}
+
+###
+
+GET http://localhost:1234/api/users_resource/show_users
+Accept: application/json
+
+###
+
+###
+
+POST http://localhost:1234/api/users_resource/create_user
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "User name",
+  "age": 45
+}
+###

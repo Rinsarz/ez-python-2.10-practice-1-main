@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  web:
+    build: .
+    command: "python composites/service_api.py"
+    volumes:
+      - ".:app/"
+    ports:
+      - "1234:1234"

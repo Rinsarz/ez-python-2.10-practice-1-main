@@ -1,0 +1,15 @@
+POST http://localhost:1234/api/messages_resource/create_message
+Accept: application/json
+Content-Type: application/json
+
+{
+  "text": "message text",
+  "author_id": 5
+}
+###
+
+
+GET http://localhost:1234/api/messages_resource/show_messages?limit=2
+Accept: application/json
+
+###

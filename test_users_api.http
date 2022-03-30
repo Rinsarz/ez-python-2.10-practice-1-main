@@ -1,0 +1,44 @@
+GET http://127.0.0.1:1234/api/users_resource/show_users?order_by=message_time
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:1234/users/6
+Accept: application/json
+
+###
+
+POST http://127.0.0.1:1234/api/users_resource/create_user
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Mira Slavna",
+  "age": 31
+}
+
+###
+
+PUT http://127.0.0.1:1234/users/6
+Accept: application/json
+Content-Type: application/json
+
+{
+  "id": 6,
+  "name": "------",
+  "age": 0
+}
+
+###
+
+PATCH http://127.0.0.1:1234/users/6
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Misha Loki"
+}
+
+###
+
+DELETE http://127.0.0.1:1234/users/6
